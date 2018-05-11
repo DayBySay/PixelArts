@@ -1,6 +1,5 @@
 language: node_js
-node_js: "7"
-
+node_js: '7'
 stages:
 - name: deploy
   if: branch = master
@@ -11,6 +10,10 @@ jobs:
     script: skip
     deploy:
       provider: firebase
-      token: 
+      token:
         secure: b9dKpyd8AuVixy1dqkdkRcKq5rrdbaAjrIqPUaOS3WlJRlXDaVXNo5wbLZywjorim6SkXGbQGjCRK/mgYjq9+q7HCJRBtiBBjp05Iu4hNco67p71VhF63c+K1hw1uGD+9x4tfoOqgKR6/J6LJAOGHhvm7IDZDDhnjOGSEfafkqvtdbNphfkFAoBscAAyBIl4Lv0zjorp62U99trslTNnyeThXdze3sRTyky3g2FaZQ6SecxNhf+ii0fvHps1eI7IOva9bznJcI59hhe4Mwlkz0YvDTeX0Epix1ShtgWYcKyupLAmrs935EoliB1iYw0ud+v7xGwc8FJhfFydRRFPBTKFTZf7Gh4T3vVV+Dybt3Cji+EMbN7ADB9KxzANfF3TJWJwkZumylqT7ZEU0+0+XxjMz4LUSHOwdUJajYoFRfv659z9yBBsNpKzB6de5UQ0jGuqPcrYpxLnOjua53I+XopSHw5OG6rRKWJ8G5SNJsjChbuOYPfRuLtl669ER/6UrxCbtcrGUvIh/26Yzyw20RsAmjFI8ukpG+sT3tSM8UCNuLAlbTmUFMspfJqIDSPpxU1Io2Ssf+5veyHNlvYKRCyAuPd+vOcOu8bEbJh1GFfPwzmCTdENC7YJ9aaqD0dKR/DCMp5KyFKlLuyHHGzCspxfqlBY7+1EBsfjO6MQ4EQ=
-    project: "daybysay"
+    project: daybysay
+
+notifications:
+  slack:
+    secure: B53nSibFk0nrwKX9JVmXq/KAF91Y0a8lP8C6/NWSPQ1w0cNrGRa2NfimJgRrH8SFDJyXc0zmfc83snS7QpMnT4sFcM44s5zsDpac5wxigPigzwMlSGNqvlbpWiCpkCvtvDZ4MxhuQp62PHJFF4+oPfyMaqjh54wKxhGn9i0iWUiUjNcwItikmBJieegmO0FASz2J8nJj5Jfn4BjYhztmmoBGokC4KCp86prp9MYLWxUfLUrtVnrlIEMVh5W41/UvwKnWPy66AP+ibcL3DIY9V/jSfzND3OuMa/ehxFQQYmDl1UzPJ4Vvo7cGsvh2+CJkpQZ+WS74fk7EnuUPJ74/1d7e/loSoqCpH0XMqnkSApFj5U9KdGpdlvHmnpmVR8xnBR9BVLD3UwXjTThX+QMvnrI/UOp2d4Yeiu2YyTa8xg+4tvU6kNp86hNRXwiYCbU45Q2mUF35TNVIYVR7V6JlL4XkTIk/cqP9DNPoeFiNnjgxgLE9QxYMljnkm34CvtVom2JvqGHoehYcL/C21HsU2cPDYar87Y3Z/nI9BPKrqzgHVAm7JqZhHNv9Q3Ag+HCtkoz66KegjwGxLNpWLkyf4kK+N2lVJepxFSpg3s1drX0B6no75d7HkKO85mh+Lbl8vshjpCU+70zzcbKP8RNRG0Tz2nvTTep1nik9F/AhOjM=
