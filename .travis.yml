@@ -1,0 +1,16 @@
+language: node_js
+node_js: "7"
+
+stages:
+- name: deploy
+  if: branch = master
+jobs:
+  include:
+  - stage: deploy
+    install: skip
+    script: skip
+    deploy:
+      provider: firebase
+      token: 
+        secure: b9dKpyd8AuVixy1dqkdkRcKq5rrdbaAjrIqPUaOS3WlJRlXDaVXNo5wbLZywjorim6SkXGbQGjCRK/mgYjq9+q7HCJRBtiBBjp05Iu4hNco67p71VhF63c+K1hw1uGD+9x4tfoOqgKR6/J6LJAOGHhvm7IDZDDhnjOGSEfafkqvtdbNphfkFAoBscAAyBIl4Lv0zjorp62U99trslTNnyeThXdze3sRTyky3g2FaZQ6SecxNhf+ii0fvHps1eI7IOva9bznJcI59hhe4Mwlkz0YvDTeX0Epix1ShtgWYcKyupLAmrs935EoliB1iYw0ud+v7xGwc8FJhfFydRRFPBTKFTZf7Gh4T3vVV+Dybt3Cji+EMbN7ADB9KxzANfF3TJWJwkZumylqT7ZEU0+0+XxjMz4LUSHOwdUJajYoFRfv659z9yBBsNpKzB6de5UQ0jGuqPcrYpxLnOjua53I+XopSHw5OG6rRKWJ8G5SNJsjChbuOYPfRuLtl669ER/6UrxCbtcrGUvIh/26Yzyw20RsAmjFI8ukpG+sT3tSM8UCNuLAlbTmUFMspfJqIDSPpxU1Io2Ssf+5veyHNlvYKRCyAuPd+vOcOu8bEbJh1GFfPwzmCTdENC7YJ9aaqD0dKR/DCMp5KyFKlLuyHHGzCspxfqlBY7+1EBsfjO6MQ4EQ=
+    project: "daybysay"
